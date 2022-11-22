@@ -1,0 +1,14 @@
+.blood-type {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.blood-type-box {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.blood-type-box > * {
+  width: 100%;
+}

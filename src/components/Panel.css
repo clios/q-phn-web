@@ -1,0 +1,22 @@
+.panel {
+  padding: 1rem;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-x: auto;
+  background-color: #22282a;
+}
+
+.panel-label {
+  margin-left: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.panel-title {
+  margin-bottom: 1rem;
+}
+
+.panel-section {
+  margin-bottom: 2rem;
+}

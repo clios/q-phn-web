@@ -1,0 +1,21 @@
+.sider {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+.sider-content {
+  margin: 1rem;
+}
+
+.logo-seal {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 0.8rem;
+  transition: all 500ms ease;
+  z-index: 999;
+}
+
+.logo-seal:hover {
+  width: 240px;
+}

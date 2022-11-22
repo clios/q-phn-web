@@ -1,0 +1,32 @@
+.section-header {
+  display: grid;
+  padding: 1rem;
+}
+
+.section-header-title {
+  font-size: 1.3rem;
+}
+
+.section-header-subtitle {
+  display: block;
+  color: hsla(197, 10%, 90%, 1);
+  font-weight: normal;
+  margin-top: 0.2rem;
+}
+
+.section-header-error {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.section-header-toolbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-header-tools {
+  display: flex;
+  justify-self: end;
+}

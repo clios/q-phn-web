@@ -1,0 +1,64 @@
+GET http://192.168.1.24:8000/residents
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+GET http://192.168.1.24:8000/residents/1
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+POST http://192.168.1.24:8000/residents
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+{
+  "address_barangay": "DIBUL",
+  "address_latitude": null,
+  "address_longitude": null,
+  "address_municipal": "SAGUDAY",
+  "address_province": "QUIRINO",
+  "address_purok": "02",
+  "address_street": "Street",
+  "birthday": "2012-04-11T14:01:21.582432Z",
+  "blood_type": "a+",
+  "census_visit": 2,
+  "census_year": 2023,
+  "deceased": false,
+  "disability": false,
+  "educational_attainment": "elementary level",
+  "enrolled": true,
+  "ethnicity": "Ilokano",
+  "family_head": true,
+  "health_cases": ["goiter"],
+  "household_head": true,
+  "lactating": false,
+  "marital_status": "single",
+  "member_of_4ps": false,
+  "member_of_ips": false,
+  "name": "John S. Tala",
+  "nationality": "Filipino",
+  "occupation": null,
+  "place_of_birth": "San Marcos, Cabarroguis, Quirino",
+  "pregnant": false,
+  "reason_of_death": null,
+  "sex": "male",
+  "solo_parent": false
+}
+
+###
+
+PATCH http://192.168.1.24:8000/residents/1
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+{
+  "health_cases": [''],
+}
+###
+
+DELETE http://192.168.1.24:8000/residents/2
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f

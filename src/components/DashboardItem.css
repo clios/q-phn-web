@@ -1,0 +1,14 @@
+.dashboard-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.dashboard-item-header {
+  margin-bottom: 1rem;
+}
+
+.dashboard-item-footer {
+  margin-top: 1rem;
+  text-align: right;
+}

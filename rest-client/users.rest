@@ -1,0 +1,63 @@
+GET http://192.168.1.24:8000/users
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+
+###
+
+GET http://192.168.1.24:8000/users/1
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+
+###
+
+POST http://192.168.1.24:8000/users
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+
+{
+  "email": "lyntor@devhaus.ph",
+  "name": "Lyntor Paul G. Figueroa",
+  "office": "DevHaus Technologies",
+  "password": "admin123",
+  "permissions": [
+   "read_dashboard",
+    "read_family",
+    "read_location",
+    "read_resident",
+    "read_user",
+    "write_family",
+    "write_resident",
+    "write_user"
+  ],
+  "position": "System Administrator",
+  "vicinity_barangay": "Quirino",
+  "vicinity_municipal": null,
+  "vicinity_province": null
+}
+
+###
+
+PATCH http://192.168.1.24:8000/users/3
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+{
+  "permissions": [
+   "read_dashboard",
+    "read_family",
+    "read_location",
+    "read_resident",
+    "write_family",
+    "write_resident",
+    "write_user"
+  ]
+}
+
+###
+
+DELETE http://192.168.1.24:8000/users/2
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936

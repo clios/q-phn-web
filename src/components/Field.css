@@ -1,0 +1,15 @@
+.field {
+  font-size: 1rem;
+}
+
+.field-label {
+  font-size: 0.9rem;
+}
+
+.field-error {
+  font-size: 0.9rem;
+}
+
+.section-body .field {
+  width: 280px;
+}

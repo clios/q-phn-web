@@ -1,0 +1,27 @@
+POST http://192.168.1.24:8000/login
+content-type: application/json
+
+{
+    "email": "cliemtor@devhaus.ph",
+    "password": "admin123"
+}
+
+###
+
+POST http://192.168.1.24:8000/logout
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+GET http://192.168.1.24:8000/account
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+PATCH http://192.168.1.24:8000/account
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+{
+  "email": "cliemtor@devhaus.ph"
+}

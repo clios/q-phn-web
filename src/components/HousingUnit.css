@@ -1,0 +1,11 @@
+.housing-unit {
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.housing-unit-owned {
+  grid-column: 1 / 3;
+}

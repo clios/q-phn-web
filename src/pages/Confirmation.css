@@ -1,0 +1,36 @@
+.confirmation-container {
+  text-align: center;
+}
+
+.confirmation-container section {
+  padding: 2rem;
+}
+
+.confirmation-container h1 {
+  margin: 0 0 2rem 0;
+  color: hsla(39, 75%, 50%, 1);
+}
+
+.confirmation-container h2 {
+  margin: 0;
+}
+
+.confirmation-container p {
+  margin: 2rem;
+  font-size: 1.3rem;
+}
+
+.confirmation-container .image {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.confirmation-form {
+  display: grid;
+  justify-items: center;
+}
+
+.confirmation-form .field-label {
+  margin: 0;
+}

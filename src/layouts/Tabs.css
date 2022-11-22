@@ -1,0 +1,28 @@
+.tabs {
+  display: grid;
+}
+
+.tabs-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsla(197, 10%, 50%, 1);
+}
+
+.tabs-item {
+  display: block;
+  padding: 0.4rem 1.5rem 0.2rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+
+.tabs-item:hover,
+.tabs-item:visited {
+  background-color: hsla(39, 75%, 50%, 1);
+  cursor: pointer;
+}
+
+.tabs-item.active {
+  border-bottom: 0.2rem solid hsla(39, 75%, 50%, 1);
+}

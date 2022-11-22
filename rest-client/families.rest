@@ -1,0 +1,72 @@
+GET http://192.168.1.24:8000/families
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+###
+
+GET http://192.168.1.24:8000/families/2
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+###
+
+POST http://192.168.1.24:8000/families
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+{
+  "address_barangay": "MAGSAYSAY",
+  "address_latitude": null,
+  "address_longitude": null,
+  "address_municipal": "SAGUDAY",
+  "address_province": "QUIRINO",
+  "address_purok": "02",
+  "address_street": "SARANAY",
+  "agricultural_products": [],
+  "census_visit": 3,
+  "census_year": 2022,
+  "communication_facilities": [],
+  "fishpond_area": 0,
+  "garbage_disposals": [],
+  "house_lights": [],
+  "house_units": [],
+  "livestock_carabao": 0,
+  "livestock_cow": 0,
+  "livestock_goat": 0,
+  "livestock_horse": 0,
+  "livestock_pig": 0,
+  "livestock_sheep": 0,
+  "monthly_average_income": null,
+  "name_of_head": "Lyntor",
+  "other_livelihoods": [],
+  "owned_corn_field_area": 0,
+  "owned_rice_field_area": 0,
+  "planning_methods": [],
+  "poultry_chicken": 0,
+  "poultry_duck": 0,
+  "poultry_geese": 0,
+  "poultry_turkey": 0,
+  "toilets": [],
+  "total_children": 0,
+  "total_members": 0,
+  "transportation_facilities": [],
+  "unowned_corn_field_area": 0,
+  "unowned_lands": [],
+  "unowned_rice_field_area": 0,
+  "water_supplies": []
+}
+
+###
+
+PATCH http://192.168.1.24:8000/families/1
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936
+
+{
+  "house_units": ["concrete"]
+}
+###
+
+DELETE http://192.168.1.24:8000/families/3
+content-type: application/json
+Authorization: Bearer 8ffa7c944b6dbe8321fd8265969db6d3fe65d2ec627bf2fb3058052329b3c936

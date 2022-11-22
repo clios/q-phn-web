@@ -1,0 +1,12 @@
+.section-footer {
+  display: grid;
+  justify-content: end;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: hsla(197, 10%, 50%, 1);
+  background-color: hsla(197, 10%, 15%, 1);
+  color: hsla(39, 75%, 50%, 1);
+  font-style: italic;
+  font-size: 0.9rem;
+  transition: all 300ms ease;
+}

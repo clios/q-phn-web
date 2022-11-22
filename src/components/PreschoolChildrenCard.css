@@ -1,0 +1,26 @@
+.dashboard-preschool {
+  display: grid;
+  text-align: center;
+}
+
+.dashboard-preschool-total {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-preschool-content {
+  padding: 1rem;
+}
+
+.dashboard-preschool-progress {
+  border: none;
+  position: relative;
+  width: 100%;
+  background-color: hsla(60, 75%, 50%, 1);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress.dashboard-preschool-progress::-moz-progress-bar {
+  background: hsla(197, 75%, 50%, 1);
+}

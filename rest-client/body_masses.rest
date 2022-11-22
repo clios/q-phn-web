@@ -1,0 +1,45 @@
+GET http://192.168.1.24:8000/bodyMasses
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+GET http://192.168.1.24:8000/bodyMasses?resident_id=13
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+GET http://192.168.1.24:8000/bodyMasses/1
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+###
+
+POST http://192.168.1.24:8000/bodyMasses
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+{
+  "bmi": 24.2,
+  "height": 170,
+  "recorded_at": "2022-05-06T00:00:00Z",
+  "resident_id": 13,
+  "status": "normal weight",
+  "weight": 70
+}
+
+###
+
+PATCH http://192.168.1.24:8000/bodyMasses/1
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
+
+{
+ "recorded_at": "2022-05-05T00:00:00Z"
+}
+###
+
+DELETE http://192.168.1.24:8000/bodyMasses/1
+content-type: application/json
+Authorization: Bearer b486dcc2de38d9110a8000ad45d7f9fe888e2c8d7763ec49219f8ad31c4c7f5f
